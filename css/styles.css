@@ -312,6 +312,16 @@ button {
   color: #2e2f42;
 }
 
+.mobil-contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24;
+}
+
+.mobil-contacts {
+  margin-bottom: 48px;
+}
+
 .mobil-contacts-link.current {
   font-weight: 500;
   font-size: 20px;
@@ -360,4 +370,17 @@ button {
   .mobile-menu {
     display: none;
   }
+}
+
+/* Hero */
+.hero-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  max-width: 496px;
+  margin: 0 auto;
 }
