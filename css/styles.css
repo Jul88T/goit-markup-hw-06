@@ -246,6 +246,7 @@ button {
   position: relative;
   padding-top: 72px;
   padding-bottom: 40px;
+  align-items: flex-start;
 
   display: flex;
   flex-direction: column;
