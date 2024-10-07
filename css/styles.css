@@ -461,7 +461,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .section-hero {
     padding-top: 188px;
     padding-bottom: 188px;
@@ -474,5 +474,58 @@ button {
   .button-order:hover,
   .button-order:focus {
     background-color: #404bbf;
+  }
+}
+/* section 2 */
+
+@media screen and (max-width: 768px) {
+  .features-icon {
+    display: none;
+  }
+}
+.features {
+  padding: 96px 0;
+}
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features-item {
+  margin-bottom: 72px;
+  width: 100%;
+}
+.features-item:last-child {
+  margin-bottom: 0;
+}
+.features-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.features-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .features {
+    max-width: 736px;
+    min-height: 312px;
+  }
+  .features-item {
+    margin-right: 24px;
+    width: calc((100% - 72px) / 2);
   }
 }
