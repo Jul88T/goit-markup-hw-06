@@ -312,8 +312,18 @@ button {
   color: #2e2f42;
 }
 
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* Сбрасываем любые другие отступы */
+}
+
 .mobile-nav-item {
-  margin-bottom: 40px; /* Отступ между элементами навигации */
+  margin-bottom: 40px; /* Устанавливаем расстояние между элементами */
+}
+
+.mobile-nav-item:last-child {
+  margin-bottom: 0; /* Убираем отступ для последнего элемента */
 }
 
 .mobil-contacts-list {
@@ -326,8 +336,17 @@ button {
   margin-bottom: 48px;
 }
 
+.mobil-contacts-list {
+  list-style: none; /* Убираем стандартные маркеры списка */
+  padding: 0; /* Убираем отступы по умолчанию */
+}
+
 .mobil-contacts-item {
   margin-bottom: 24px; /* Отступ между элементами */
+}
+
+.mobil-contacts-item:last-child {
+  margin-bottom: 0; /* Убираем отступ для последнего элемента */
 }
 
 .mobil-contacts-link.current {
