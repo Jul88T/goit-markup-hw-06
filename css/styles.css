@@ -312,6 +312,10 @@ button {
   color: #2e2f42;
 }
 
+.mobile-nav-item {
+  margin-bottom: 40px; /* Отступ между элементами навигации */
+}
+
 .mobil-contacts-list {
   display: flex;
   flex-direction: column;
@@ -320,6 +324,10 @@ button {
 
 .mobil-contacts {
   margin-bottom: 48px;
+}
+
+.mobil-contacts-item {
+  margin-bottom: 24px; /* Отступ между элементами */
 }
 
 .mobil-contacts-link.current {
