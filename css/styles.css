@@ -461,7 +461,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
   .section-hero {
     padding-top: 188px;
     padding-bottom: 188px;
