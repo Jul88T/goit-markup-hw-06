@@ -7,7 +7,6 @@
 }
 
 /* Hero */
-
 .section-hero {
   background: #2e2f42;
   padding-top: 188px;
@@ -23,6 +22,7 @@
   max-width: 1440px;
   margin: 0 auto;
 }
+
 .hero-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
