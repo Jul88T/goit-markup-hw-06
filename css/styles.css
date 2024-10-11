@@ -1231,3 +1231,9 @@ button {
     height: 584px;
   }
 }
+@media screen and (min-width: 1158px) {
+  .modal {
+    width: 408px;
+    height: 584px;
+  }
+}
