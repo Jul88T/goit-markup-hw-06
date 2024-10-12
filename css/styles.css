@@ -891,6 +891,9 @@ button {
   color: #ffffff;
 }
 .subscribe-email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .email-contact {
   width: 288px;
