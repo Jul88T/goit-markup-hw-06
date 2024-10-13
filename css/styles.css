@@ -960,6 +960,9 @@ background-color: #2e2f42;
        width: 264px;
       margin-bottom: 0;
      }
+     .footer-logo {
+      justify-content: flex-start;
+     }
      .subscribe {
       min-width: 453px;
      }
