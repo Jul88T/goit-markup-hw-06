@@ -971,6 +971,9 @@ background-color: #2e2f42;
       width: 208px;
       margin-bottom: 0;
     }
+    .subscribe-title {
+      justify-content: flex-start;
+    }
     .line-email {
       margin-bottom: 0;
     }
