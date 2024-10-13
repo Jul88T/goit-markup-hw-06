@@ -1015,21 +1015,24 @@ background-color: #2e2f42;
   
     .logo-container {
       min-width: 264px;
-       margin-right: 120px;
+      margin-right: 120px;
        
      }
-     .socialnetworks {
-
+     .social-icon-link:hover,
+     .social-icon-link:focus {
+       background-color: #31d0aa;
+     }
+     .button-submit:hover,
+     .button-submit:focus {
+    background-color: #404bbf; 
      }
      .subscribe {
       margin-left: 80px;
-       
      }
      .footer-text {
       max-width: 264px;
      } 
-      
-    } 
+       } 
     
   /*  modal */
 .backdrop {
