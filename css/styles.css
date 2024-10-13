@@ -783,37 +783,33 @@ button {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
+
 /* footer */
+.container {
+  max-width: 320px;
+}
 .page-footer {
+background-color: #2e2f42; 
+ }
+.flex-container {
   display: flex;
-  flex-wrap: wrap;
-  background-color: #2e2f42;
-  padding: 96px 0;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-}
-.logo-container {
+  align-items: center;
+  padding: 96px 16px;
+ }
+ .logo-container {
+   width: 288px;
   margin-bottom: 72px;
-}
-.footer-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+ }
+ .logo-btn {
+  display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-}
-.logo-part {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #f4f4fd;
-  text-decoration: none;
-}
-.logo {
+  flex-direction: row;
+  margin-bottom: 16px;
+  gap: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -822,38 +818,48 @@ button {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
-}
-.footer-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
-  margin-top: 16px;
-}
-.socialnetworks {
-  margin-bottom: 72px;
-}
-.social-media {
+   }
+   .logo-part {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #f4f4fd;
+    text-decoration: none;
+   }
+   .footer-text {
+    max-width: 288px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+   }
+ .socialnetworks {
+   width: 208px;
+   margin-bottom: 72px;
+  }
+ .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #fff;
-  text-align: center;
-  margin-top: 72px;
-}
-.social-media-list {
+  color: #ffffff;
+  margin-bottom: 16px;
+ }
+ .social-media-list {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: row;
   gap: 16px;
-  align-items: center;
-  justify-content: center;
-  margin-top: 16px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 0;
+}
+.social-icon {
+  width: 40px;
+  height: 40px;
 }
 .social-icon-link {
   width: 100%;
@@ -865,24 +871,17 @@ button {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-icon {
-  width: 40px;
-  height: 40px;
-}
 .media-icon {
   fill: #f4f4fd;
 }
 .subscribe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  height: 100%;
+   max-width: 288px;
+   height: 100%;
 }
-
 .subscribe-title {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -892,137 +891,21 @@ button {
 }
 .subscribe-email {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  align-items: center;
-}
-.email-contact {
-  width: 288px;
-  height: 40px;
-  border: 1px solid #ffffff;
-  background-color: transparent;
-  opacity: 1;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  padding-left: 16px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: #ffffff;
-  margin-bottom: 16px;
-}
-.email-contact::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: #fff;
-  opacity: 0.6;
-  line-height: 2;
-}
-.button-submit {
-  min-width: 165px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  cursor: pointer;
-  background-color: #4d5ae5;
-  border: none;
-  border-radius: 4px;
-  flex-direction: row;
-  gap: 16px;
-  padding: 8px 24px;
-}
-
-.button-icon {
-  fill: #f4f4fd;
-}
-
-@media screen and (min-width: 768px) {
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-
-    column-gap: 24px;
-    row-gap: 72px;
-    flex-wrap: wrap;
-    padding-left: 108px;
   }
-  .socialnetworks {
-    margin-left: 0;
-    justify-content: start;
-  }
-  .logo-container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .logo {
-    text-align: start;
-  }
-  .social-media-list {
-    justify-content: center;
-  }
-  .footer-text {
+  .email-contact {
     width: 264px;
-  }
-  .email-contact .input-text-email {
-    width: 264px;
-  }
-  .social-media {
-    text-align: start;
-    margin: 0;
-  }
-  .subscribe {
-    display: flex;
-    align-items: flex-start;
-    justify-content: start;
-  }
-  .subscribe-title {
-    margin: 0;
-  }
-  .subscribe-email {
-    display: flex;
-    gap: 24px;
-    margin-left: 0;
-    margin-right: 0;
-    justify-content: start;
-    margin-top: 24px;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .page-footer {
-    padding: 100px 0;
-  }
-  .flex-container {
-    width: 1158px;
-    padding: 0 15px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  .footer-text {
-    max-width: 264px;
-  }
-  .logo-container {
-  }
-  .socialnetworks {
-    margin-right: 80px;
-  }
-  .subscribe-email {
-    flex-wrap: nowrap;
-  }
-  .button-submit:hover,
-  .button-submit:focus {
-    background-color: #404bbf;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
   }
   .email-contact::placeholder {
     font-weight: 400;
@@ -1032,12 +915,652 @@ button {
     color: #fff;
     padding: 16px 8px 8px 0;
   }
-  .social-icon-link:hover,
-  .social-icon-link:focus {
-    background-color: #31d0aa;
+  .line-email {
+    margin-bottom: 16px;
   }
-}
+  .button-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-width: 165px;
+    height: 40px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4d5ae5;
+    border: none;
+    border-radius: 4px;
+  }
+  .button-icon {
+    margin-left: 16px;
+    fill: #f4f4fd;
+  }
+  
+  @media screen and (min-width: 768px) {
 
+    .container {
+      max-width: 768px;
+    }
+     
+    .flex-container {
+      align-items: baseline;
+      justify-content: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 108px 108px;
+      margin: 0 auto;
+      gap: 72px 24px;
+     }
+    .logo-container {
+       width: 264px;
+      margin-bottom: 0;
+     }
+     .subscribe {
+      min-width: 453px;
+     }
+    .subscribe-email {
+      flex-direction: row;
+      gap: 24px;
+    }
+    .socialnetworks {
+      width: 208px;
+      margin-bottom: 0;
+    }
+    .line-email {
+      margin-bottom: 0;
+    }
+    .email-contact {
+      width: 264px;
+    }
+    .button-submit {
+      display: inline-flex;
+    }
+  }
+
+  @media screen and (min-width: 1158px) {
+ 
+ .container {
+  max-width: 1158px;
+ }
+ 
+ 
+    .flex-container {
+      display: flex;
+      flex-wrap: nowrap; 
+      justify-content: center;
+    }
+      
+     
+    .logo-btn {
+      display: inline-block;
+    }
+  
+    .logo-container {
+      min-width: 264px;
+       margin-right: 120px;
+       
+     }
+     .subscribe {
+      margin-left: 80px;
+       
+     }
+     .footer-text {
+      max-width: 264px;
+     } 
+      
+    } 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+  
+  
+  
+  
+  
+  
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+}  
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 /*  modal */
 .backdrop {
   width: 320px;
