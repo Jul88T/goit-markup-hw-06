@@ -967,6 +967,9 @@ background-color: #2e2f42;
       flex-direction: row;
       gap: 24px;
     }
+    .social-media {
+      justify-content: flex-start;
+    }
     .socialnetworks {
       width: 208px;
       margin-bottom: 0;
